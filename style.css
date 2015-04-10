@@ -1,0 +1,114 @@
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+    min-width: 100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+
+#banner{
+    background-image: url("images/phoenix.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    border-bottom: 5px ridge #ff9955;
+}
+
+#about{
+    background-color: white;
+    text-align: center;
+    color:#333333;
+}
+
+#about h1{
+    color: #332233;
+}
+
+#projects{
+    padding:0px;
+}
+
+#projHead{
+    background-color:#ff9955;
+}
+
+#projHead h1{
+    font-size: 48px;
+}
+
+#projHead{
+    text-align: center;
+}
+
+#projGrid .col-sm-4{
+    border: 2px ridge rgba(51, 51, 51, 0.5);
+    text-align: center;
+}
+
+#contact{
+    background-color: #eeeedd;
+    text-align: center;
+}
+
+#contact h1{
+    font-size:48px;
+    margin-top:5px;
+}
+
+#contact .fa-comments{
+    margin-top: 5px;
+}
+
+
+#contactLinks{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.fullWidth
+{
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    [class*="col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+#bulb{
+    font-size: 180px;
+}
+
+.fa-cog{
+    margin-top: 20px;
+}
