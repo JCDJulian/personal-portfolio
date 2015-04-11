@@ -13,19 +13,6 @@ html, body {
 
 h1{
     font-family: 'Adelon-Serial-Regular',"Palatino Linotype", "Book Antiqua", Palatino, serif;}
-.fullscreen,
-.content-a {
-    width:100%;
-    min-height:100%;
-    min-width: 100%;
-}
-.not-fullscreen,
-.not-fullscreen .content-a,
-.fullscreen.not-overflow,
-.fullscreen.not-overflow .content-a {
-    height:100%;
-    overflow:hidden;
-}
 
 #banner{
     background-image: url("images/phoenix.jpg");
@@ -92,7 +79,7 @@ h1{
 #proj-1 img{
     max-height:80px;
     max-width:100%;
-    height:80px;
+    height:auto;
     width:auto;
 }
 
