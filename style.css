@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'Adelon-Serial-Regular';
+    src: url("fonts/Adelon-Serial-Regular.ttf");
+}
+
 /* fullscreen setup */
 html, body {
     /* give this to all tags from html to .fullscreen */
     height:100%;
+    background-color:black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
+h1{
+    font-family: 'Adelon-Serial-Regular',"Palatino Linotype", "Book Antiqua", Palatino, serif;}
 .fullscreen,
 .content-a {
     width:100%;
@@ -17,17 +27,6 @@ html, body {
     overflow:hidden;
 }
 
-/* content centering styles */
-.content-a {
-    display:table;
-}
-.content-b {
-    display:table-cell;
-    position:relative;
-    vertical-align:middle;
-    text-align:center;
-}
-
 #banner{
     background-image: url("images/phoenix.jpg");
     background-size: cover;
@@ -40,18 +39,31 @@ html, body {
     border-bottom: 5px ridge #ff9955;
 }
 
+#banner h1{
+    font-size: 70px;
+}
+
+#banner h3{
+    font-size: 20px;
+}
+
 #about{
-    background-color: white;
+    background-color: #eeeedd;
     text-align: center;
     color:#333333;
 }
 
 #about h1{
     color: #332233;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#projects{
-    padding:0px;
+#projGrid{
+    background-color:white;
+}
+
+#projects p{
+    margin-top:10px;
 }
 
 #projHead{
@@ -66,14 +78,33 @@ html, body {
     text-align: center;
 }
 
-#projGrid .col-sm-4{
-    border: 2px ridge rgba(51, 51, 51, 0.5);
+#proj-1 .col-md-4{
     text-align: center;
+    border-radius: 7px;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#proj-1 h1{
+    border-bottom: 3px solid #ff9955;
+}
+
+#proj-1 img{
+    max-height:80px;
+    max-width:100%;
+    height:80px;
+    width:auto;
 }
 
 #contact{
     background-color: #eeeedd;
     text-align: center;
+}
+
+#contact img{
+    width:100%;
+    border-radius:10%;
+    margin-bottom:10px;
 }
 
 #contact h1{
@@ -90,8 +121,20 @@ html, body {
     list-style-type:none;
     margin:0px;
     padding:0px;
-    text-align: left;
+    text-align: center;
     font-size: 25px;
+    display: inline;
+}
+
+#footer{
+    background-color:#333333;
+    color:#eeeeee;
+    text-align: center;
+}
+
+#footer p{
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 .fullWidth
@@ -111,4 +154,8 @@ html, body {
 
 .fa-cog{
     margin-top: 20px;
+}
+
+.eq-height{
+    overflow: hidden; 
 }
